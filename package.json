@@ -1,0 +1,11 @@
+{
+  "name": "mdscan",
+  "version": "1.0.0",
+  "description": "Scans a directory of Markdown files, parses their content, and compiles them into a single JSON file for easy access and management.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Parsa Javan",
+  "license": "MIT"
+}
