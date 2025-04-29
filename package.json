@@ -2,10 +2,22 @@
   "name": "mdscan",
   "version": "1.0.0",
   "description": "Scans a directory of Markdown files, parses their content, and compiles them into a single JSON file for easy access and management.",
-  "main": "index.ts",
+  "main": "./dist/cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsc && node ./dist/cli.js"
   },
   "author": "Parsa Javan",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "citty": "^0.1.6",
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.11"
+  },
+  "keywords": ["Markdown","Json"]
 }
