@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import { defineCommand, runMain } from "citty";
-import { scanTheFolder } from "./scanner";
-import { Parse, Write } from "./parser";
+import { scanTheFolder } from "./scanner.js";
+import { Parse, Write } from "./parser.js";
 
 const main = defineCommand({
 	meta: {
@@ -28,7 +28,7 @@ const main = defineCommand({
 			process.exit()
 		}
 		const parsed_markdowns = await Parse(markdowns)
-		Write(parsed_markdowns,args.output)	
+		Write(parsed_markdowns, args.output)
 	}
 })
 
