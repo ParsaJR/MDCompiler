@@ -1,7 +1,7 @@
 {
   "name": "mdscan",
   "version": "1.0.0",
-  "description": "It Scans a directory of Markdown files, parses their content, and compiles them into a single JSON file for easy access and management.",
+  "description": "Scan a directory of Markdowns, parse their content, and compile them into one single JSON file for easy access and management.",
   "main": "./dist/cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,5 +19,6 @@
     "gray-matter": "^4.0.3",
     "marked": "^15.0.11"
   },
-  "keywords": ["Markdown","Json"]
+  "keywords": ["Markdown","Json"],
+  "files": ["dist"]
 }
