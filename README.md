@@ -1,4 +1,4 @@
 # MDCompiler
 
 
-## Usecases
+## Use cases
