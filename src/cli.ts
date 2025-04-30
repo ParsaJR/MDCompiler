@@ -6,9 +6,9 @@ import { Parse, Write } from "./parser.js";
 
 const main = defineCommand({
 	meta: {
-		name: "MDScan",
+		name: "MDCompiler",
 		version: "1.0.0",
-		description: "Transfrom your markdowns to one single json."
+		description: "Transfrom your markdowns into one single json."
 	},
 	args: {
 		input: {
