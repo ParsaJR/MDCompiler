@@ -1,5 +1,5 @@
 {
-  "name": "mdscan",
+  "name": "mdcompiler",
   "version": "1.0.0",
   "description": "Scan a directory of Markdowns, parse their content, and compile them into one single JSON file for easy access and management.",
   "main": "./dist/cli.js",
