@@ -1,5 +1,6 @@
 # MDCompiler
 A CLI and Node module that scans a directory of Markdown files, extracts frontmatter and content, and generates a single JSON file for use in frontend apps.
+It can be used as a simple static site generation solution.
 
 What the Module Does:
 - Scans a directory of Markdown files.
