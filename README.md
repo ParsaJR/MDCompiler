@@ -4,7 +4,7 @@ A CLI and Node module that scans a directory of Markdown files, extracts frontma
 What the Module Does:
 - Scans a directory of Markdown files.
 - Parses them into structured JSON.
-- Outputs a single compiled file (with optional metadata)
+- Outputs a single compiled json(with optional frontmatter)
 
 # Usage
 ```
