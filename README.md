@@ -24,7 +24,7 @@ $ npx @parsajr/mdcompiler@latest ./testfolder ./output.json
 
 ```
 
-output:
+Output that will be written in output.json file:
 ```js
 [
   {
