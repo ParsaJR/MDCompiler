@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 import { defineCommand, runMain } from "citty";
-import { scanTheFolder } from "./scanner.js";
-import { Parse, Write } from "./parser.js";
+import { mdcompiler } from "./mdcompiler.js";
 
 const main = defineCommand({
 	meta: {
@@ -23,12 +22,7 @@ const main = defineCommand({
 		},
 	},
 	async run({ args }) {
-		var markdowns = await scanTheFolder(args.input)
-		if (markdowns.length === 0) {
-			process.exit()
-		}
-		const parsed_markdowns = await Parse(markdowns)
-		Write(parsed_markdowns, args.output)
+		mdcompiler(args.input, args.output)
 	}
 })
 
