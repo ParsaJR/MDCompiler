@@ -2,15 +2,20 @@
   "name": "@parsajr/mdcompiler",
   "version": "1.0.7",
   "description": "Scan a directory of Markdowns, parse their content, and compile them into one single JSON file for easy access and management.",
-  "main": "./dist/cli.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "bin": {
-    "mdcompiler": "dist/cli.js"
+    "mdcompiler": "./dist/cli.js"
+  },
+  "exports": {
+    "default": "./dist/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "dev": "tsc && node ./dist/cli.js"
+    "dev": "tsc && node ./dist/cli.js",
+    "prepare": "pnpm run build",
+    "release": "pnpm publish"
   },
   "author": "Parsa Javan",
   "license": "MIT",

@@ -2,12 +2,14 @@
 
 import { defineCommand, runMain } from "citty";
 import { mdcompiler } from "./mdcompiler.js";
+import config from "../package.json" with {type: 'json'}
+
 
 const main = defineCommand({
 	meta: {
-		name: "MDCompiler",
-		version: "1.0.0",
-		description: "Transfrom your markdowns into one single json."
+		name: config.name,
+		description: config.description,
+		version: config.version
 	},
 	args: {
 		input: {
