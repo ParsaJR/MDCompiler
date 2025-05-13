@@ -1,10 +1,9 @@
-import { log } from "console";
 import { promises, writeFileSync } from "fs";
 import matter from "gray-matter";
 import { marked } from "marked";
 import path from "path"
 
-interface Markdown {
+export interface Markdown {
 	filename: string,
 	frontmatter: Record<string, any>,
 	body: string
@@ -29,10 +28,6 @@ export async function Parse(mdPaths: string[]): Promise<Markdown[]> {
 	}
 	return result;
 }
-
-type WriteResult = {
-	ok: true
-} | {ok: false, error: Error}
 
 export function Write(file: Markdown[], outputPath: string): boolean {
 	try {
