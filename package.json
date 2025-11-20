@@ -1,6 +1,6 @@
 {
   "name": "@parsajr/mdcompiler",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Scan a directory of Markdowns, parse their content, and compile them into one single JSON file for easy access and management.",
   "types": "./dist/index.d.ts",
   "type": "module",
